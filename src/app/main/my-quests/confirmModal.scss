@@ -1,0 +1,71 @@
+.cfm-modal {
+    font-family: "PingFang";
+}
+
+// Apply border radius to the dialog
+.cfm-modal .ant-modal-content,
+.cfm-modal .ant-modal-header {
+    border-radius: 10px;
+}
+
+.cfm-modal--title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cfm-modal--cancelBtn {
+}
+
+.cfm-modal--cancelBtn--text {
+}
+
+.cfm-modal--okBtn {
+    color: var(--clr-gs-0);
+}
+
+//* Content area style
+.cfm--modal--container {
+    //* Container of the following four
+    display: grid;
+    grid-template-areas:
+        "action title"
+        "infoProp info";
+    grid-template-columns: max-content;
+}
+
+%descripTextBase {
+    text-align: end;
+    margin-right: 5px;
+    color: var(--clr-gs-4);
+}
+
+%valueTextBase {
+    color: var(--clr-gs-6);
+    font-weight: bold;
+}
+
+.cfm-modal--action-text {
+    @extend %descripTextBase;
+    grid-area: action;
+}
+
+.cfm-modal--quest-title {
+    @extend %valueTextBase;
+    grid-area: title;
+}
+
+.cfm-modal--info-prop {
+    @extend %descripTextBase;
+    grid-area: infoProp;
+}
+
+.cfm-modal--quest-info {
+    @extend %valueTextBase;
+    grid-area: info;
+}
+
+//* Hint style
+.cfm-modal--hint {
+    display: block;
+    text-align: end;
+}

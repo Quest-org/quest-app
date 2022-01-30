@@ -1,0 +1,101 @@
+.switch-locale {
+    //! Just for fun
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.topbar {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 100%;
+}
+
+.topbar--back {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    flex: 0 0 32px;
+}
+
+.topbar--back--icon {
+    fill: var(--clr-gs-4);
+    width: 20px;
+    height: 20px;
+}
+
+.topbar--cur-quest--label {
+    font-family: "PingFang";
+    margin: 0 5px 0 20px;
+    color: var(--clr-gs-5);
+}
+
+.topbar--cur-quest--select {
+    display: inline-block;
+}
+
+.topbar--cur-quest--select--option--color-mark {
+    width: 12px;
+    height: 12px;
+    flex: 0 0 12px;
+    margin-right: 3px;
+    box-shadow: none;
+}
+
+.topbar--cur-quest--select--option--text {
+    font-family: "LanTingHei-thin";
+    color: var(--clr-gs-5);
+}
+
+.topbar--logo-text {
+    height: 50px;
+    padding: 4px 0 4px 0;
+    margin: auto;
+    display: block;
+}
+
+.topbar--user {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.topbar--user--alarm {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+}
+
+.topbar--user--alarm--icon {
+    fill: var(--clr-gs-4);
+}
+
+.topbar--user--info {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.22);
+    display: flex;
+    direction: rtl;
+    margin: 0 10px 0 20px;
+    height: 32px;
+    border-radius: 16px;
+    align-items: center;
+}
+
+.topbar--user--info--avatar {
+    height: 100%;
+    border-radius: 50%;
+    border: 1px white solid;
+    display: inline;
+
+    box-shadow: 0 -1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.topbar--user--info--username {
+    padding: 0 12px 0 20px;
+    color: var(--clr-blue);
+    font-family: "LanTingHei";
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 120px;
+    white-space: nowrap;
+    direction: ltr;
+}

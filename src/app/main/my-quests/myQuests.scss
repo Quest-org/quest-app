@@ -1,0 +1,138 @@
+.my-quests {
+    flex-direction: column;
+    flex: 1 0;
+    height: 100%;
+}
+
+.my-quests--control {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 12px 0 12px;
+    margin-bottom: 10px;
+}
+
+//* Control panel items
+%controlItemBase {
+    height: 25px;
+    font-size: 14px;
+    font-family: "LanTingHei-thin";
+}
+
+//* New questionnaire btn
+.my-quests--control--create-btn {
+    @extend %controlItemBase;
+    background-color: var(--clr-orange);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.my-quests--control--create-btn--icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    stroke: var(--clr-gs-0);
+    stroke-width: 8px;
+}
+.my-quests--control--create-btn--text {
+    color: var(--clr-gs-0);
+    font-size: 14px;
+    font-family: "LanTingHei";
+    position: relative;
+    top: 1px;
+}
+
+.my-quests--control--filter {
+    flex: 1 0;
+    margin-right: 15px;
+}
+
+//* Rainbow marker
+.my-quests--control--filter--marker {
+    width: 25px;
+    height: 25px;
+    border: 4px solid var(--clr-gs-0);
+}
+
+//* Search box. Overriding ant design default style.
+.my-quests--control--filter--search {
+    @extend %controlItemBase;
+    margin-left: 10px;
+    min-width: 150px;
+    flex: 0 0 30%;
+}
+
+.my-quests--control--filter--search .ant-input {
+    @extend %controlItemBase;
+    border-radius: 10px 0 0 10px;
+    border-right: 0;
+}
+
+.my-quests--control--filter--search .ant-btn {
+    @extend %controlItemBase;
+}
+
+.my-quests--control--filter--search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
+    border-radius: 0 10px 10px 0;
+    border-left: 0;
+}
+
+//* Display mode radio btn (list/card)
+.my-quests--control--filter--radio-group {
+    @extend %controlItemBase;
+    display: flex;
+}
+
+%radioBtnBase {
+    line-height: normal;
+    @extend %controlItemBase;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+// Lifting up specificity
+.my-quests--control--filter--radio-group .my-quests--control--filter--radio-list {
+    @extend %radioBtnBase;
+    border-radius: 10px 0 0 10px;
+}
+
+.my-quests--control--filter--radio-group .my-quests--control--filter--radio-card {
+    @extend %radioBtnBase;
+    border-radius: 0 10px 10px 0;
+}
+
+//* Final style.
+.my-quests--display--active {
+    font-family: "LanTingHei" !important;
+}
+
+.my-quests--content-loading {
+    flex: 1 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-quests--content {
+    flex: 1 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.my-quests--content--column {
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+    flex: 1;
+}
+
+.my-quests--content--card {
+    margin-bottom: 20px;
+    min-width: 200px;
+}

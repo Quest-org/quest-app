@@ -1,0 +1,184 @@
+.quest-card {
+    border: 3px solid var(--clr-gs-0);
+    transition: width 500ms, box-shadow 500ms ease-in-out, transform 300ms ease-in-out;
+    cursor: pointer;
+    width: 100%;
+}
+
+.quest-card:hover {
+    box-shadow: 0 0 8px 2px var(--clr-orange-l1);
+    transform: scale(1.03);
+}
+
+%questTextBase {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.quest-card--title {
+    @extend %questTextBase;
+    font-family: "LanTingHei";
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--clr-gs-6);
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.quest-card--sep-line {
+    @extend %questTextBase;
+    width: 40%;
+    border-top: 1px solid var(--clr-gs-3);
+    margin-bottom: 3px;
+}
+
+.quest-card--descrip {
+    @extend %questTextBase;
+    font-family: "LanTingHei-thin";
+    font-size: 12px;
+    line-height: 20px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+//* Quest card info panel styles
+%questInfoIconBase {
+    width: 12px;
+    height: 12px;
+    fill: white; //* not using global variable
+}
+
+.quest-card--info {
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 8px 3px 8px;
+    cursor: auto;
+    font-family: "PingFang";
+    color: white; //* not using global variable
+}
+
+//* First line of the info panel
+.quest-card--info--line1 {
+    width: 100%;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.quest-card--info--line1--status-dot {
+    @extend %questInfoIconBase;
+    box-shadow: none;
+    margin-right: 5px;
+}
+
+.quest-card--info--line1--count {
+    justify-content: flex-end;
+    flex: 1 0;
+}
+
+.quest-card--info--line1--count--refresh-icon {
+    @extend %questInfoIconBase;
+    cursor: pointer;
+    margin-left: 5px;
+    transform: scale(1.75); //* minor fix for svg icon
+}
+
+//* Refresh Icon animation
+@keyframes spin {
+    from {
+        transform: rotate(0deg) scale(1.75);
+    }
+    to {
+        transform: rotate(360deg) scale(1.75);
+    }
+}
+.quest-card--info--line1--count--refresh-icon--clicked {
+    animation: spin 1s;
+}
+
+//* Second line of the info panel
+.quest-card--info--line2 {
+    width: 100%;
+    font-size: 12px;
+    justify-content: flex-start;
+}
+
+.quest-card--info--line2--menu {
+    flex: 1 0;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+.quest-card:hover .quest-card--info--line2--menu {
+    display: flex;
+}
+
+.quest-card--info--line2--menu--text {
+    cursor: pointer;
+}
+
+.quest-card--info--line2--menu--icon {
+    @extend %questInfoIconBase;
+    margin-left: 5px;
+    cursor: pointer;
+    transform: scale(1.65); //* minor fix for svg icon
+}
+
+.quest-card--info--line2--time-str {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+//* Menu styles
+$menuPadding: 16px;
+
+.quest-card--menu {
+    padding: $menuPadding 0 $menuPadding 0;
+}
+
+.ant-popover-inner-content .quest-card--menu .quest-card--menu--menu-item {
+    height: 25px;
+    margin: 0;
+    padding: $menuPadding 15px $menuPadding 20px;
+}
+
+.quest-card--menu--menu-item--icon {
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
+    margin-right: 5px;
+
+    //* Fix alignment for the font 'LanTingHei'
+    position: relative;
+    top: -1px;
+}
+
+@mixin menuItemContainerBase($color: var(--clr-gs-5)) {
+    color: $color;
+    fill: $color;
+}
+
+.quest-card--menu--delete {
+    @include menuItemContainerBase(var(--clr-fn-error));
+}
+
+.quest-card--menu--pause {
+    @include menuItemContainerBase(var(--clr-fn-warn));
+}
+
+.quest-card--menu--continue {
+    @include menuItemContainerBase(var(--clr-fn-warn));
+}
+
+.quest-card--menu--edit {
+    @include menuItemContainerBase;
+}
+
+.quest-card--menu--tag {
+    @include menuItemContainerBase;
+}

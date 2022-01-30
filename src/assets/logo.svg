@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="142px" viewBox="0 0 144 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>LOGO</title>
+    <defs>
+        <path d="M30.318887,59.0909091 L101.681113,59.0909091 C102.908864,59.0909091 104.012703,59.8390078 104.467598,60.9793773 L130.359905,125.888468 C130.973788,127.427401 130.223886,129.172603 128.684953,129.786485 C128.331346,129.927539 127.954123,130 127.573421,130 L4.42657927,130 C2.76972502,130 1.42657927,128.656854 1.42657927,127 C1.42657927,126.619298 1.49904043,126.242075 1.64009456,125.888468 L27.5324023,60.9793773 C27.9872969,59.8390078 29.0911363,59.0909091 30.318887,59.0909091 Z" id="path-1"></path>
+        <filter x="-8.4%" y="-16.2%" width="116.8%" height="135.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.271470717 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-19.7%" y="-5.8%" width="139.4%" height="111.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.518220061 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="7.84366481%" y1="50%" x2="91.9606087%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#ACE5FF" offset="0%"></stop>
+            <stop stop-color="#0578AE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#79D4FE" offset="0%"></stop>
+            <stop stop-color="#006898" offset="100%"></stop>
+        </linearGradient>
+        <path d="M12,43.5795455 L21,43.5795455" id="path-6"></path>
+        <filter x="-55.6%" y="-288.5%" width="211.1%" height="677.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feMorphology radius="1.0005" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.497596154 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="组件/全部问卷" transform="translate(-86.000000, -688.000000)">
+            <g id="导航菜单栏" transform="translate(30.000000, 98.000000)">
+                <g id="LOGO" transform="translate(62.000000, 593.000000)">
+                    <g id="LOGO-纸张">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="LOGO-地标笔" filter="url(#filter-3)" transform="translate(49.000000, 0.000000)">
+                        <g id="铅笔" transform="translate(0.000000, 39.886364)">
+                            <polygon id="笔身左侧" fill="#FFD685" points="0 2.06818182 8.4 5.17045455 8.4 56.875 0 47.5681818"></polygon>
+                            <polygon id="笔身右侧" fill="#FFAA00" transform="translate(27.300000, 29.471591) scale(-1, 1) translate(-27.300000, -29.471591) " points="23.1 2.06818182 31.5 5.17045455 31.5 56.875 23.1 47.984905"></polygon>
+                            <rect id="笔身前面" fill="#FFBC35" x="8.4" y="5.17045455" width="14.7" height="51.7045455"></rect>
+                            <polygon id="笔尖左侧" fill="#E6C894" points="0 47.5681818 15.75 72.3863636 8.4 56.875"></polygon>
+                            <polygon id="笔尖前面" fill="#DAB475" points="8.4 56.875 15.75 72.3863636 23.1 56.875"></polygon>
+                            <polygon id="笔尖右侧" fill="#CD9538" points="23.1 56.875 15.75 72.3863636 31.5 47.5681818"></polygon>
+                            <polygon id="顶部" fill="#E3C899" points="0 2.06818182 8.4 1.80821267e-14 23.1 1.80821267e-14 31.5 2.06818182 23.1 5.17045455 8.4 5.17045455"></polygon>
+                        </g>
+                        <g id="三维地标">
+                            <path d="M0.750014788,12.2402597 C1.62500493,9.52020202 2.75,7.14015152 4.125,5.10010823 C6.1875,2.04004329 12.2217191,0 16.5,0 C20.7782809,0 26.8125,2.04004329 28.875,5.10010823 C30.25,7.14015152 31.3773886,9.52020202 32.2571657,12.2402597 L16.5,4.08008658 L0.750014788,12.2402597 Z" id="地标形状深度面" fill="url(#linearGradient-4)"></path>
+                            <g id="位标/位标-蓝-空心-无阴影" transform="translate(0.000000, 2.040043)" fill="#00AEFF">
+                                <path d="M16.5,0 C33.4044924,0 34.7568518,14.3795737 31.7140432,23.7430171 C30.6001811,27.1706345 26.9038334,32.8565841 20.625,40.8008658 L20.625,40.8008658 L12.375,40.8008658 C6.09645959,32.8574858 2.40011187,27.1715362 1.28595684,23.7430171 C-1.7568518,14.3795737 -0.404492405,0 16.5,0 Z M16.5,8.16017316 C11.9436508,8.16017316 8.25,11.3569279 8.25,15.3003247 C8.25,19.2437215 11.9436508,22.4404762 16.5,22.4404762 C21.0563492,22.4404762 24.75,19.2437215 24.75,15.3003247 C24.75,11.3569279 21.0563492,8.16017316 16.5,8.16017316 Z" id="位标-空心-无阴影"></path>
+                            </g>
+                            <path d="M16.5,22.950487 C19.9584678,22.950487 22.9751212,21.2873436 24.5717599,18.8211008 C23.7839214,22.0544232 20.4693223,24.4805195 16.5,24.4805195 C12.529855,24.4805195 9.2147046,22.0534173 8.4273888,18.8201054 C10.0232327,21.2864359 13.0405885,22.950487 16.5,22.950487 Z" id="空心椭圆深度面" fill="url(#linearGradient-5)"></path>
+                        </g>
+                        <g id="阴影交界线" stroke-linecap="round">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            <use stroke="#E3C899" stroke-width="0.001" xlink:href="#path-6"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

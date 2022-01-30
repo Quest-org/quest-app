@@ -1,0 +1,106 @@
+.navbar {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 20px 0;
+    flex: 0 0 20%;
+    max-width: 200px;
+}
+
+//* Submenu title style
+.navbar--menu--submenu {
+    margin: 20px 0 20px 0;
+}
+
+.navbar--menu--submenu--text {
+    font-family: "LanTingHei";
+    color: var(--clr-gs-5);
+    line-height: initial;
+    transition: color 400ms;
+    position: relative;
+    top: 1px;
+}
+
+.navbar--menu--submenu--icon {
+    width: 17px;
+    height: 17px;
+    flex: 0 0 17px;
+    margin-right: 8px;
+    fill: var(--clr-gs-4);
+
+    transition: fill 400ms;
+}
+
+.ant-menu-submenu:hover .navbar--menu--submenu--text {
+    color: var(--clr-blue);
+}
+.ant-menu-submenu:hover .navbar--menu--submenu--icon {
+    fill: var(--clr-blue);
+}
+
+//* The designer menu item should be treated differently
+#menu-item-designer {
+    margin-bottom: 10px;
+}
+#menu-item-designer:hover .navbar--menu--submenu--text {
+    color: var(--clr-blue);
+}
+#menu-item-designer:hover .navbar--menu--submenu--icon {
+    fill: var(--clr-blue);
+}
+
+//* Lifting up specificity. Trust me, I don't like this.
+.navbar .navbar--menu .navbar--menu--menu-item {
+    height: 35px;
+    margin: 4px 0 4px 0;
+    transition: box-shadow 250ms;
+}
+
+//* When hovering on the menu item
+.navbar--menu--menu-item:hover .navbar--menu--menu-item-text {
+    color: var(--clr-gs-5);
+}
+
+//* When the menu item is selected
+.navbar .ant-menu-item-selected .navbar--menu--menu-item--text {
+    font-family: "LanTingHei";
+    color: var(--clr-orange-d1);
+}
+
+.navbar--menu--menu-item--text {
+    color: var(--clr-gs-5);
+    font-family: "LanTingHei-thin";
+    font-size: 13px;
+    transition: 400ms;
+}
+
+.navbar--bottom {
+    flex-direction: column;
+    height: 100%;
+    flex: 1 0;
+}
+
+.navbar--bottom--logo {
+    width: 90%;
+    max-height: 100px;
+    margin-bottom: 20px;
+}
+
+.navbar--bottom--info {
+    height: 40px;
+    align-items: flex-start;
+}
+
+.navbar--bottom--info--icon {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    fill: var(--clr-gs-4);
+    margin-right: 8px;
+}
+
+.navbar--bottom--info--text {
+    color: var(--clr-gs-5);
+    font-family: "LanTingHei-thin";
+    font-size: 18px;
+}

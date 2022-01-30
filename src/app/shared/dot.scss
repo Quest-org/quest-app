@@ -1,0 +1,52 @@
+@mixin dotBase($bgClr: white) {
+    border-radius: 50%;
+    padding: 6px 0 6px 0;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bgClr;
+}
+
+.dot {
+    @include dotBase($bgClr: white);
+}
+.dot-rainbow {
+    @include dotBase($bgClr: white);
+    background-image: conic-gradient(
+        from 1.5708rad at 50% 50%,
+        #bb36ff 3%,
+        #ff4444 25%,
+        #ffab42 45%,
+        #76ff42 63%,
+        #28b8ff 83%
+    );
+}
+.dot-gray {
+    @include dotBase($bgClr: var(--clr-mk-gray));
+}
+.dot-red {
+    @include dotBase($bgClr: var(--clr-mk-red));
+}
+.dot-orange {
+    @include dotBase($bgClr: var(--clr-mk-orange));
+}
+.dot-green {
+    @include dotBase($bgClr: var(--clr-mk-green));
+}
+.dot-blue {
+    @include dotBase($bgClr: var(--clr-mk-blue));
+}
+.dot-purple {
+    @include dotBase($bgClr: var(--clr-mk-purple));
+}
+
+//* This rule is additional
+.dot-btn {
+    transition: box-shadow 300ms ease-in-out;
+}
+.dot-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 8px 2px var(--clr-orange-l1);
+    transform: scale(1.05);
+}

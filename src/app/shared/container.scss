@@ -1,0 +1,18 @@
+//* Shared CSS classes
+@mixin container-base($justify: center) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+.container {
+    @include container-base($justify: center);
+}
+
+.container-start {
+    @include container-base($justify: flex-start);
+}
+
+.container-end {
+    @include container-base($justify: flex-end);
+}

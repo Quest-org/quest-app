@@ -1,0 +1,37 @@
+.tag-select {
+    flex-direction: column;
+    padding: 15px 15px 5px 15px;
+    width: 225px;
+}
+
+.tag-select--colors {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.tag-select--colors--dot {
+    width: 18px;
+    height: 18px;
+}
+
+.tag-select--colors--cur-color {
+    flex-direction: column;
+}
+
+.tag-select--colors--cur-color--mark {
+    width: 5px;
+    height: 5px;
+    background-color: var(--clr-gs-2);
+    box-shadow: none;
+    padding: 0;
+    margin-top: 3px;
+}
+
+.tag-select--text {
+    font-family: "PingFang";
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--clr-gs-5);
+    margin-top: 5px;
+}
